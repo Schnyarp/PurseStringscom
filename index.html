@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PurseStrings.com — Premium Domain For Sale</title>
+  <meta name="description" content="PurseStrings.com — premium domain ideal for personal finance apps, budgeting tools, frugal-living communities, cashback & savings marketplaces, and money‑management content. Submit an offer to purchase." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://pursestrings.com/" />
+  <meta name="theme-color" content="#F6EDE4" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PurseStrings.com — Premium Domain For Sale" />
+  <meta property="og:description" content="PurseStrings.com — brandable domain for budgeting apps, personal-finance content, savings marketplaces, and cashback platforms. Contact domain@pursestrings.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pursestrings.com/" />
+  <meta property="og:image" content="https://pursestrings.com/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PurseStrings.com — Premium Domain For Sale" />
+  <meta name="twitter:description" content="PurseStrings.com — brandable domain for budgeting apps, personal-finance content, savings marketplaces, and cashback platforms." />
+  <meta name="twitter:image" content="https://pursestrings.com/og-image.png" />
+
+  <link rel="icon" href="/favicon.ico" />
+
+  <link rel="alternate" hreflang="en" href="https://pursestrings.com/" />
+  <meta name="distribution" content="global" />
+  <meta name="rating" content="general" />
+
+  <style>
+    :root{
+      --max-width:1120px;
+      --bg-top:#fbf6f2;
+      --bg-bottom:#fffdfc;
+      --panel:#ffffff;
+      --muted:#6b6f72;
+      --ink:#122525;
+      --leather:#c78b65;
+      --stitch:#f1e6dd;
+      --accent:#2b9fa8;
+      --success:#1fa77a;
+      --danger:#e05a5a;
+      --radius:16px;
+      --shadow: 0 24px 80px rgba(18,22,22,0.06);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:40px 20px;
+      color:var(--ink);
+      background:
+        radial-gradient(700px 240px at 14% 10%, rgba(43,159,168,0.03), transparent 12%),
+        linear-gradient(180deg,var(--bg-top) 0%, var(--bg-bottom) 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      overflow-x:hidden;
+    }
+
+    /* Look chosen: "Budget Boutique"
+       - warm, approachable boutique aesthetic with leather band, stitched detail, and soft paper textures
+       - friendly, consumer-first: works well for budgeting apps, savings marketplaces, frugal-living content and cashback tools
+       - floating badges: coin stack, purse, coupon, piggy
+       - decorative layers pointer-events:none
+    */
+    .bg { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:visible; }
+
+    .leather-band {
+      position:fixed;
+      left:50%;
+      top:8%;
+      transform:translateX(-50%);
+      width:1100px;
+      height:320px;
+      z-index:0;
+      border-radius:18px;
+      pointer-events:none;
+      background:
+        linear-gradient(180deg, rgba(199,139,101,0.06), rgba(199,139,101,0.02)),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1100' height='320'><g fill='%23000000' fill-opacity='0.02'><rect x='20' y='18' width='140' height='16' rx='8'/><rect x='172' y='28' width='120' height='16' rx='8'/></g></svg>");
+      background-repeat:repeat-x;
+      background-size:360px 120px;
+      opacity:0.95;
+      mix-blend-mode:screen;
+      box-shadow: inset 0 18px 48px rgba(0,0,0,0.04);
+    }
+
+    .stitch {
+      position:fixed;
+      left:50%;
+      top:14%;
+      transform:translateX(-50%);
+      width:960px;
+      height:6px;
+      z-index:0;
+      border-radius:6px;
+      pointer-events:none;
+      background: repeating-linear-gradient(90deg, rgba(241,230,221,0.9) 0 6px, transparent 6px 12px);
+      opacity:0.6;
+      mix-blend-mode:multiply;
+    }
+
+    .floaters { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:visible; }
+
+    .badge {
+      position:absolute;
+      width:72px;
+      height:72px;
+      background-size:contain;
+      background-repeat:no-repeat;
+      opacity:0.12;
+      will-change:transform,opacity;
+      filter: drop-shadow(0 12px 28px rgba(0,0,0,0.06));
+    }
+
+    @keyframes floaty {
+      0% { transform: translateY(0) rotate(-6deg); }
+      50% { transform: translateY(-14px) rotate(6deg); }
+      100% { transform: translateY(0) rotate(-6deg); }
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      padding:32px;
+      border-radius:16px;
+      background: linear-gradient(180deg,#ffffff,#fffdfc);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(6,12,18,0.03);
+      position:relative;
+      z-index:2;
+    }
+
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:12px;
+    }
+
+    .brand{ display:flex; gap:12px; align-items:center; }
+    .logo{
+      width:88px;
+      height:88px;
+      border-radius:12px;
+      background: linear-gradient(135deg,var(--leather), #b7744f);
+      color:var(--stitch);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:900;
+      font-size:20px;
+      box-shadow: 0 12px 34px rgba(0,0,0,0.04);
+      flex-shrink:0;
+    }
+
+    h1{ margin:0; font-size:24px; color:var(--ink); }
+    p.lead{ margin:6px 0 0; color:var(--muted); font-size:14px; max-width:760px; }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:22px;
+      align-items:start;
+      margin-top:16px;
+    }
+
+    .hero {
+      padding:18px;
+      border-radius:12px;
+      color:var(--ink);
+      border:1px solid rgba(6,12,18,0.03);
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:space-between;
+      background: linear-gradient(90deg, rgba(11,159,168,0.02), rgba(199,139,101,0.01));
+    }
+    .hero h2{ margin:0 0 8px 0; font-size:20px; color:var(--leather); }
+    .hero p{ margin:0; color:var(--muted); }
+
+    .panel {
+      background: var(--panel);
+      color:var(--ink);
+      padding:20px;
+      border-radius:12px;
+      box-shadow: 0 10px 30px rgba(6,12,18,0.04);
+      border: 1px solid rgba(6,12,18,0.02);
+    }
+
+    h2.section { margin-top:0; font-size:18px; color:var(--accent); }
+    .features ul{ margin:0; padding-left:18px; color:var(--muted); }
+    .features li{ margin-bottom:10px; }
+
+    .samples { display:flex; gap:10px; margin-top:12px; flex-wrap:wrap; }
+    .sample {
+      min-width:140px;
+      padding:10px;
+      border-radius:10px;
+      background: linear-gradient(180deg,#fff,#fbfbfb);
+      border:1px solid rgba(6,12,18,0.03);
+      color:var(--muted);
+      font-weight:700;
+      text-align:center;
+    }
+
+    .cta-row{ display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; align-items:center; }
+    .btn{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:10px 14px;
+      border-radius:999px;
+      font-weight:800;
+      cursor:pointer;
+      text-decoration:none;
+      border:0;
+    }
+    .btn-primary{
+      background: linear-gradient(90deg,var(--accent), var(--leather));
+      color:#fff;
+      box-shadow: 0 10px 30px rgba(6,12,18,0.08);
+    }
+    .btn-ghost{
+      background:transparent;
+      border:1px solid rgba(6,12,18,0.06);
+      color:var(--muted);
+    }
+
+    .contact-card{
+      position:sticky;
+      top:28px;
+      align-self:start;
+      background: linear-gradient(180deg,#ffffff,#fbfbfb);
+      padding:16px;
+      border-radius:12px;
+      border:1px solid rgba(6,12,18,0.03);
+      box-shadow: 0 8px 26px rgba(6,12,18,0.04);
+      max-width:360px;
+    }
+
+    .contact-card h3{ margin:0 0 8px 0; font-size:16px; color:var(--leather); }
+    .contact-email, .contact-email a{
+      white-space:nowrap;
+      display:inline-block;
+      font-weight:800;
+      color:var(--accent);
+      font-size:0.98rem;
+      text-decoration:none;
+    }
+
+    form label{ display:block; font-size:13px; color:var(--muted); margin-bottom:6px; }
+    form input, form textarea {
+      width:100%;
+      padding:10px 12px;
+      border-radius:8px;
+      border:1px solid rgba(6,12,18,0.06);
+      background:#fff;
+      color:var(--ink);
+      font-size:14px;
+      margin-bottom:12px;
+    }
+    form textarea{ min-height:110px; resize:vertical; }
+
+    .resources { margin-top:12px; font-size:13px; color:var(--muted); border-top:1px dashed rgba(6,12,18,0.04); padding-top:12px; }
+    .resources a { color:var(--accent); font-weight:700; text-decoration:none }
+
+    footer{ margin-top:18px; color:var(--muted); font-size:13px; text-align:center }
+
+    @media (max-width:980px){
+      .grid{ grid-template-columns: 1fr; gap:16px; }
+      .contact-card{ position:relative; top:auto; width:100%; max-width:none; }
+      .container{ padding:20px; }
+      .logo{ width:72px; height:72px; border-radius:10px; }
+      .leather-band, .stitch, .floaters { display:none; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "url":"https://pursestrings.com",
+        "name":"PurseStrings.com",
+        "description":"PurseStrings.com — premium domain for personal-finance apps, budgeting tools, cashback & savings marketplaces, and frugal-living content."
+      },
+      {
+        "@type":"Organization",
+        "name":"PurseStrings.com",
+        "url":"https://pursestrings.com",
+        "contactPoint":[
+          {
+            "@type":"ContactPoint",
+            "contactType":"sales",
+            "email":"domain@pursestrings.com"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="leather-band" aria-hidden="true"></div>
+    <div class="stitch" aria-hidden="true"></div>
+    <div class="floaters" id="floaters" aria-hidden="true"></div>
+  </div>
+
+  <main class="container" role="main" aria-labelledby="main-heading">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">PS</div>
+        <div>
+          <h1 id="main-heading">PurseStrings.com</h1>
+          <p class="lead">Premium domain for budgeting apps, personal-finance content, savings marketplaces, cashback tools and frugal‑living communities.</p>
+        </div>
+      </div>
+
+      <div style="text-align:right">
+        <div style="color:var(--muted);font-size:13px">For inquiries</div>
+        <div class="contact-email"><a href="mailto:domain@pursestrings.com">domain@pursestrings.com</a></div>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="Main content">
+      <div>
+        <div class="hero" role="note" aria-live="polite" aria-labelledby="hero-title">
+          <div>
+            <h2 id="hero-title">A friendly, brandable name for money-conscious products</h2>
+            <p>PurseStrings.com communicates thrift, money management and savings — perfect for consumer budgeting apps, cashback marketplaces, financial-literacy content, or membership communities focused on frugality and value.</p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#" id="inquireBtn">Make an Offer</a>
+              <a class="btn btn-ghost" href="mailto:domain@pursestrings.com?subject=Domain%20Offer%20-%20PurseStrings.com">Email Now</a>
+            </div>
+          </div>
+
+          <div style="min-width:220px; text-align:center">
+            <div style="color:var(--muted); font-size:13px">Domain</div>
+            <div style="font-weight:900; font-size:18px; margin-top:6px">PurseStrings.com</div>
+            <div style="color:var(--muted); font-size:13px; margin-top:8px">Serious offers only.</div>
+          </div>
+        </div>
+
+        <article class="panel" aria-labelledby="why-title" style="margin-top:18px">
+          <h2 id="why-title" class="section">Why PurseStrings.com?</h2>
+          <p class="lead">A short .com that evokes budgeting and careful spending. Ideal for apps and content that help people save, track spending, discover deals, or manage household finances.</p>
+
+          <div class="features" style="margin-top:12px">
+            <ul>
+              <li>Clear consumer signal — visitors immediately understand the site's focus</li>
+              <li>Fits budgeting apps, cashback marketplaces, coupon & deal platforms, and frugal-living communities</li>
+              <li>Brandable across web, mobile, newsletters and partner integrations</li>
+            </ul>
+          </div>
+
+          <div class="samples" aria-hidden="false">
+            <div class="sample">Budgeting App</div>
+            <div class="sample">Cashback & Deals Marketplace</div>
+            <div class="sample">Frugal Living Community</div>
+            <div class="sample">Personal Finance Content</div>
+          </div>
+        </article>
+
+        <article class="panel" style="margin-top:18px" aria-labelledby="about-title">
+          <h3 id="about-title" style="margin-top:0">About this domain</h3>
+          <p class="lead">PurseStrings.com is a premium domain available for transfer.</p>
+
+          <ul style="color:var(--muted);margin-top:12px">
+            <li>Well-suited to founders, personal-finance startups, publishers and marketplaces</li>
+            <li>Useful for integrations with payment providers, cashback partners, analytics and affiliate platforms</li>
+            <li>We use escrow to ensure a smooth, secure transfer for both buyer and seller.</li>
+          </ul>
+
+          <div class="resources" aria-labelledby="resources-title">
+            <div id="resources-title" style="font-weight:800; margin-bottom:8px">Helpful resource</div>
+            <div><a href="https://corelli.com/domains.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">How To Choose A Domain Name</a></div>
+          </div>
+        </article>
+      </div>
+
+      <aside class="contact-card" aria-label="Contact & offer">
+        <div>
+          <h3 style="margin-top:0">Contact & Offer</h3>
+          <p style="margin-top:6px;color:var(--muted)">Submit an offer — this form opens your email client with the details prefilled. Or email <a href="mailto:domain@pursestrings.com" class="contact-email">domain@pursestrings.com</a>.</p>
+
+          <form id="inquiryForm" onsubmit="handleSubmit(event)" aria-label="Domain offer form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="offer">Your offer (USD)</label>
+            <input id="offer" name="offer" type="text" placeholder="Enter your offer (USD)" required />
+
+            <label for="company">Company (optional)</label>
+            <input id="company" name="company" type="text" placeholder="Your company or organization" />
+
+            <label for="country">Country</label>
+            <input id="country" name="country" type="text" placeholder="Your country" required />
+
+            <label for="phone">Phone number (optional)</label>
+            <input id="phone" name="phone" type="tel" />
+
+            <label for="message">Message (questions, timeline, escrow preference)</label>
+            <textarea id="message" name="message" placeholder="Hi — I'm submitting an offer for PurseStrings.com. Please share transfer instructions and next steps."></textarea>
+
+            <button class="btn btn-primary" type="submit" style="width:100%; margin-top:6px">Send Offer</button>
+          </form>
+
+          <footer style="margin-top:10px; text-align:left; color:var(--muted); font-size:13px">
+            Prefer direct email? <a href="mailto:domain@pursestrings.com" style="color:var(--accent)">domain@pursestrings.com</a>
+          </footer>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      &copy; 2025 PurseStrings.com. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    // floating purse-themed badges: coin stack, purse, coupon, piggy (data-URI SVGs)
+    (function placeFloaters(){
+      const layer = document.getElementById('floaters');
+      if(!layer) return;
+
+      const svgs = {
+        coins: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><ellipse cx='32' cy='16' rx='20' ry='8' fill='%23FFD27F'/><ellipse cx='32' cy='28' rx='20' ry='8' fill='%23FFD27F' opacity='0.9'/></svg>`),
+        purse: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M12 22c0-6 8-10 20-10s20 4 20 10v14c0 8-8 16-20 16S12 44 12 36V22z' fill='%23FFF6F0' stroke='%23000000' stroke-opacity='0.03'/></svg>`),
+        coupon: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='8' y='18' width='48' height='28' rx='6' fill='%23E6FFF9' stroke='%23000000' stroke-opacity='0.03'/></svg>`),
+        pig: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><path d='M10 28c6-12 22-16 30-8 0 0-4 6-12 8-8 2-18 8-18 0z' fill='%23FFF6E8'/></svg>`)
+      };
+
+      const items = [
+        {svg:svgs.coins, left:'12%', top:'18%', size:86, dur:9200},
+        {svg:svgs.purse, left:'78%', top:'16%', size:76, dur:11000},
+        {svg:svgs.coupon, left:'48%', top:'66%', size:72, dur:10000},
+        {svg:svgs.pig, left:'84%', top:'54%', size:68, dur:12000}
+      ];
+
+      items.forEach(it=>{
+        const el = document.createElement('div');
+        el.className = 'badge';
+        el.style.left = it.left;
+        el.style.top = it.top;
+        el.style.width = it.size + 'px';
+        el.style.height = it.size + 'px';
+        el.style.backgroundImage = `url("data:image/svg+xml;utf8,${it.svg}")`;
+        el.style.animation = `floaty ${it.dur}ms ease-in-out ${Math.random()*1200}ms infinite`;
+        el.style.opacity = 0.06 + Math.random()*0.18;
+        layer.appendChild(el);
+      });
+    })();
+
+    // Compose mailto and open user's email client with form contents
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const offer = document.getElementById('offer').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const country = document.getElementById('country').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Domain Offer - PurseStrings.com');
+      const bodyText =
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Company: ${company || '(not provided)'}\n` +
+        `Offer (USD): ${offer}\n` +
+        `Country: ${country}\n` +
+        `Phone: ${phone || '(not provided)'}\n\n` +
+        `Message:\n${message}\n\n---\nSent from PurseStrings.com offer form`;
+
+      window.location.href = `mailto:domain@pursestrings.com?subject=${subject}&body=${encodeURIComponent(bodyText)}`;
+    }
+
+    document.getElementById('inquiryForm').addEventListener('submit', handleSubmit);
+
+    // Inquire button: scroll to form on mobile, open mailto on desktop
+    document.getElementById('inquireBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      const form = document.getElementById('inquiryForm');
+      if(window.innerWidth < 900){
+        form.scrollIntoView({behavior:'smooth', block:'center'});
+        form.querySelector('input')?.focus();
+      } else {
+        const subject = encodeURIComponent('Domain Offer - PurseStrings.com');
+        const body = encodeURIComponent('Hi — I would like to make an offer for PurseStrings.com. Please reply with transfer instructions and next steps.');
+        window.location.href = `mailto:domain@pursestrings.com?subject=${subject}&body=${body}`;
+      }
+    });
+  </script>
+</body>
+</html>
